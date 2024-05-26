@@ -1,0 +1,100 @@
+
+
+body{
+    background-color: blue;
+}
+
+.flex{
+    display: flex;   
+}
+
+
+header{
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+}
+
+header div.logo>img{
+    vertical-align: middle;
+    width: 100px;
+    padding: .5rem 1rem .5rem 3rem;
+}
+
+header div.logo>h1{
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+header div.play>button{
+    background-color: green;
+    font-size: 1rem;
+    border: solid transparent;
+    border-radius: 5%;
+    color:white;
+    margin: 2rem 3rem 2rem 1rem;
+    padding: .5rem 3rem;
+    
+}
+
+header div.play>select{
+    background-color: green;
+    font-size: 1rem;
+    border: solid transparent;
+    border-radius: 5%;
+    color:white;
+    margin: 2rem 0rem;
+    padding: .5rem 3rem;
+}
+
+main{
+    padding:2rem ;
+    color: white;
+}
+
+section#grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+}
+
+section#grid,
+section#grid > article.cell{
+    border: 2px solid white;
+}
+
+section#grid > article.cell.easy{
+    height: calc((100% / 10) - 4px);
+    width: calc((100% / 10) - 4px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+section#grid > article.cell.medium{
+    height: calc((100% / 9) - 4px);
+    width: calc((100% / 9) - 4px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+section#grid > article.cell.hard{
+    height: calc((100% / 7) - 4px);
+    width: calc((100% / 7) - 4px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.cell-active{
+    background-color: aqua;
+    color: black;
+}

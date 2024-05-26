@@ -67,6 +67,8 @@ function generateNewGame (containerEl, selectEl){
 
 }
 
+const pointEL= document.querySelector('section.point')
+
  //1) creo un array vuoto di bombe:
 
  let blackList = [];
@@ -87,8 +89,24 @@ function generateNewGame (containerEl, selectEl){
 
     function getUniqueRandomInt(blackList,min,max){
       let randomNumber;
-       blackList == false;
+      let isFound == false;
+
+       //3) creo una condizione se il numero è presente nella lista dei numeri generati la cella diventa di colore rosso e significa che abbiamo calpestato una bomba, al contrario diventa azzura e si continua 
+      
+       while(isFound){
+         randomNumber==getRandomInt(min,max)
+
+         if(blackList.includes(randomNumber)!=false){
+            isFound==true
+            cellEl.classList.add('good-cell');
+         }else{
+            return randomNumber;
+            cellEl.classList.add('bomb');
+            pointEL.innerHTML += 'Game Over!'
+         }
+       }
     }
+
     
  }
    

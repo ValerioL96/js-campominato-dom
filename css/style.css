@@ -98,3 +98,11 @@ section#grid > article.cell.hard{
     background-color: aqua;
     color: black;
 }
+
+.bomb{
+    background-color: red;
+}
+
+.good-cell{
+    background-color: blue;
+}
